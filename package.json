@@ -67,7 +67,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,scss,ts,tsx,js,jsx}": [
+    "*.{css,scss,ts,tsx,js,jsx}": [
       "prettier --write"
     ]
   },
@@ -107,6 +107,9 @@
     "redux-saga": "1.1.3",
     "sanitize.css": "13.0.0",
     "styled-components": "5.3.3",
+    "husky": "8.0.1",
+    "lint-staged": "12.1.7",
+    "prettier": "2.6.2",
     "web-vitals": "2.1.2"
   },
   "devDependencies": {
