@@ -63,12 +63,12 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.*": [
-      "prettier --write ."
+    "*.{css,scss,ts,tsx,js,jsx}": [
+      "prettier --write"
     ]
   },
   "jest": {
