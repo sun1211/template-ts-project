@@ -11,7 +11,7 @@ export function HomePage() {
       <Helmet>
         <title>Home Page</title>
         <meta
-          name="description"
+          name="description"       
           content="A React Boilerplate application homepage"
         />
       </Helmet>
