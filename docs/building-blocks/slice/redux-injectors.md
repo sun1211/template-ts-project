@@ -7,11 +7,7 @@ You can find the main repo for the library [here](https://github.com/react-boile
 ## Usage
 
 ```ts
-import {
-  useInjectSaga,
-  useInjectReducer,
-  SagaInjectionModes,
-} from 'utils/redux-injectors';
+import { useInjectSaga, useInjectReducer, SagaInjectionModes } from 'utils/redux-injectors';
 import { saga } from './saga';
 import { reducer } from '.';
 

@@ -46,9 +46,7 @@ describe('getRepos Saga', () => {
     expect(requestDescriptor).toMatchSnapshot();
 
     const putDescriptor = getReposIterator.next(repos).value;
-    expect(putDescriptor).toEqual(
-      put(slice.githubRepoFormActions.reposLoaded(repos)),
-    );
+    expect(putDescriptor).toEqual(put(slice.githubRepoFormActions.reposLoaded(repos)));
   });
 
   it('should dispatch the user not found error', () => {
@@ -73,9 +71,7 @@ describe('getRepos Saga', () => {
 
     const putDescriptor = getReposIterator.next(repos).value;
     expect(putDescriptor).toEqual(
-      put(
-        slice.githubRepoFormActions.repoError(RepoErrorType.USER_HAS_NO_REPO),
-      ),
+      put(slice.githubRepoFormActions.repoError(RepoErrorType.USER_HAS_NO_REPO)),
     );
   });
   it('should dispatch the github rate limit error', () => {
@@ -84,13 +80,9 @@ describe('getRepos Saga', () => {
     const requestDescriptor = getReposIterator.next(username).value;
     expect(requestDescriptor).toMatchSnapshot();
 
-    const putDescriptor = getReposIterator.throw(
-      new Error('Failed to fetch'),
-    ).value;
+    const putDescriptor = getReposIterator.throw(new Error('Failed to fetch')).value;
     expect(putDescriptor).toEqual(
-      put(
-        slice.githubRepoFormActions.repoError(RepoErrorType.GITHUB_RATE_LIMIT),
-      ),
+      put(slice.githubRepoFormActions.repoError(RepoErrorType.GITHUB_RATE_LIMIT)),
     );
   });
 

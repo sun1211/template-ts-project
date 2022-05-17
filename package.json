@@ -67,10 +67,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "yarn run eslint --fix"
-    ],
-    "*.{md,json}": [
+    "*.{js,scss,ts,tsx,js,jsx}": [
       "prettier --write"
     ]
   },
@@ -139,7 +136,7 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "gh-pages": "3.2.3",
     "git-branch-is": "4.0.0",
-    "husky": "7.0.4",
+    "husky": "8.0.1",
     "i18next-scanner": "3.1.0",
     "inquirer": "7.3.3",
     "inquirer-directory": "2.2.0",

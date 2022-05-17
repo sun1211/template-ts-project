@@ -28,10 +28,7 @@ import { createSelector } from '@reduxjs/toolkit';
 export const mySelector = (state: MyRootState) => state.someState;
 
 // Here type of `someState` will be inferred ✅
-const myComplexSelector = createSelector(
-  mySelector,
-  someState => someState.someNestedState,
-);
+const myComplexSelector = createSelector(mySelector, someState => someState.someNestedState);
 
 export { myComplexSelector };
 ```

@@ -24,9 +24,7 @@ describe('GithubRepoForm slice', () => {
   });
 
   it('should handle loadRepos', () => {
-    expect(
-      slice.reducer(state, slice.githubRepoFormActions.loadRepos()),
-    ).toEqual<ContainerState>({
+    expect(slice.reducer(state, slice.githubRepoFormActions.loadRepos())).toEqual<ContainerState>({
       ...slice.initialState,
       loading: true,
       repositories: [],
