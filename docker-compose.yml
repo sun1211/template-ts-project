@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  defi_web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: defi_web
+    restart: on-failure
+    environment:
+      - PORT=${PORT}
+    expose:
+      - ${PORT}
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - ./:/app/
+      - ./.env:/app/.env
+    env_file: ./.env
+    command: yarn start
