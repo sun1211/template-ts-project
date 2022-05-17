@@ -68,8 +68,7 @@
   },
   "lint-staged": {
     "*.{css,scss,ts,tsx,js,jsx}": [
-        "prettier --write **/*.*",
-        "git add"
+      "prettier --write"
     ]
   },
   "jest": {
@@ -137,7 +136,7 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "gh-pages": "3.2.3",
     "git-branch-is": "4.0.0",
-    "husky": "7.0.4",
+    "husky": "3.0.0",
     "lint-staged": "12.4.1",
     "prettier": "2.6.2",
     "i18next-scanner": "3.1.0",
