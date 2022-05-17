@@ -17,4 +17,4 @@ services:
       - ./:/app/
       - ./.env:/app/.env
     env_file: ./.env
-    command: yarn start
+    command: npm start
