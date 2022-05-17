@@ -1,8 +1,8 @@
-version: "3.9"
+version: '3.9'
 
 services:
   defi_web:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
     container_name: defi_web
@@ -12,7 +12,7 @@ services:
     expose:
       - ${PORT}
     ports:
-      - "${PORT}:${PORT}"
+      - '${PORT}:${PORT}'
     volumes:
       - ./:/app/
       - ./.env:/app/.env

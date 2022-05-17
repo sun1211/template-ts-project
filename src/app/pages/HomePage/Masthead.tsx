@@ -12,11 +12,7 @@ export function Masthead() {
       <Title>React Boilerplate meets CRA</Title>
       <Lead>
         Now you can use the{' '}
-        <A
-          href="https://www.reactboilerplate.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <A href="https://www.reactboilerplate.com/" target="_blank" rel="noopener noreferrer">
           React Boilerplate
         </A>{' '}
         as a{' '}
