@@ -16,7 +16,7 @@ export function HomePage() {
       <PageWrapper>
         <Masthead />
         <Features />
-      </PageWrapper>              
+      </PageWrapper>                
     </>
   );
 }
