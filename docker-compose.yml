@@ -14,9 +14,7 @@ services:
     ports:
       - '${PORT}:${PORT}'
     volumes:
-      - ./src:/app/
-      - ./public:/app/
-      - ./internals:/app/
+      - ./:/app/
       - ./.env:/app/.env
     env_file: ./.env
-    command: yarn start
+    command: npm start
