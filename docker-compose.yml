@@ -14,7 +14,10 @@ services:
     ports:
       - '${PORT}:${PORT}'
     volumes:
-      - ./:/app/
+      - ./src:/app/src
+      - ./internals:/app/internals
+      - ./public:/app/public
+      - ./tsconfig.json:/app/tsconfig.json
       - ./.env:/app/.env
     env_file: ./.env
     command: npm start
