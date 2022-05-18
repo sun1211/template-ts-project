@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { NotFoundPage } from '..';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
