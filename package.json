@@ -1,17 +1,17 @@
 {
-  "name": "cra-template-rb",
-  "description": "The official React Boilerplate template for Create React App",
-  "version": "1.2.4",
+  "name": "defi",
+  "description": "Defi",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-boilerplate/react-boilerplate-cra-template.git"
+    "url": "https://monica.thh.io/wax-defi/defi-www"
   },
   "license": "MIT",
   "engines": {
     "node": ">=14.x"
   },
   "bugs": {
-    "url": "https://github.com/react-boilerplate/react-boilerplate-cra-template/issues"
+    "url": "https://monica.thh.io/wax-defi/defi-www/issues"
   },
   "main": "template.json",
   "files": [
